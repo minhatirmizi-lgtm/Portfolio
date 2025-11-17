@@ -1,0 +1,48 @@
+:root{
+--primary: #0d6efd;
+--bg: #9e5959;
+--text: #222222;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial}
+
+
+.navbar-scrolled{background-color:rgb(201, 198, 198)!important;box-shadow:0 4px 12px rgba(78, 110, 173, 0.06)}
+#mainNav .nav-link{color:var(--text)}
+
+
+.hero{height:80vh;min-height:520px;background-image:url('../images/heroImage.jpg');background-position:center;background-size:cover;position:relative;color:white}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.45));}
+.hero-text{position:relative;z-index:2}
+
+
+section{padding-top:60px;padding-bottom:60px}
+.card.project-card img{height:220px;object-fit:cover}
+
+
+footer{background:transparent}
+
+
+.dark{--bg:#0b1220;--text:#eef2ff}
+.dark body{background:var(--bg);color:var(--text)}
+.dark .navbar-scrolled{background-color:#071029}
+.dark .card{background:#071029;color:var(--text)}
+
+
+@media (max-width:767px){
+.hero{height:60vh}
+}
+/* Simple dark mode */
+.dark-mode {
+  background-color: #0b1220;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #101a2d;
+  color: #f0f0f0;
+}
+
+.dark-mode .navbar-scrolled {
+  background-color: #071029 !important;
+}
